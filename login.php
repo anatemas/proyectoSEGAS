@@ -8,6 +8,14 @@ session_start();
 <?php include 'header.php'; ?>
 
 <!DOCTYPE html>
+<header>
+    <style>
+        h2,
+        form {
+            text-align: center;
+        }
+    </style>
+</header>
 
 <body>
     <h2> Inicio sesion</h2>
@@ -19,7 +27,7 @@ session_start();
         <input type="password" name="password" id="password"> <br>
         <input type="checkbox" name="TC" id="TC">
         <label for="TC">Terminos y condiciones</label> <br>
-        <button type="submit">entrar </button>
+        <input type="submit" value="entrar">
 
     </form>
 

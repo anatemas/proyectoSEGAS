@@ -1,8 +1,8 @@
 <nav class="menu">
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Funcionamiento</a></li>
-        <li><a href="#">Características</a></li>
-        <li><a href="#">Acerca de</a></li>
+        <li><a href="/proyectoSEGAS">Inicio</a></li>
+        <li><a href="/proyectoSEGAS/funcionamiento.php">Funcionamiento</a></li>
+        <li><a href="/proyectoSEGAS/Caracterisitcas.php">Características</a></li>
+        <li><a href="/proyectoSEGAS/acercaDe.php">Acerca de</a></li>
     </ul>
 </nav>

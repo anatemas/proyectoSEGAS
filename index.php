@@ -14,6 +14,7 @@
             <ul>
                 <li>Sensor MQ-2</li>
                 <li>Microcontrolador ESP32</li>
+                <img src="imagenes/arduino.webp" alt="imagen de arduino">
                 <li>Aplicación móvil</li>
                 <li>Sirena de alarma</li>
             </ul>

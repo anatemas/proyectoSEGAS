@@ -3,6 +3,8 @@ font-family: Arial, sans-serif;
 line-height: 1.6;
 margin: 0;
 padding: 0;
+background-color: #f0f3fa;
+color: #222;
 }
 img{
     width: 20%;
@@ -11,23 +13,22 @@ body{
     background-color: beige;
 }
 h1{
-    color: red;
+    color: #1e3799;
+  text-align: center;
+  margin-top: 10px;
 }
 h2,h3{
-    color: blue;
+    color: #4a69bd;
+  margin-top: 10px;
 }
 div{
-    border: 2px solid black;
-    background-color: #white  ;
-    border-radius: 12px;
-    padding: 5px;
-margin:  2.5% 35%;
+     border: 2px solid #0a3d62;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 2.5% 25%;
+  text-align: justify;
 }
-
-
-
-
-
 
 header,
 nav,
@@ -35,12 +36,29 @@ section,
 article,
 aside,
 footer {
-padding: 15px;
-margin: 10px;
-border: 1px solid #111111;
-border-radius: 5px;
+ padding: 15px;
+  margin: 10px;
+  border: 1px solid #1e3799;
+  border-radius: 5px;
+  background-color: #fff;
+}
+header {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+}
+header h1 {
+  color: #ffffff;
 }
 
+nav {
+  background-color: #1e3799;
+  border: none;
+  text-align: center;
+}
 nav ul {
 list-style: none;
 padding: 0;

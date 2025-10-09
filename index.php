@@ -2,29 +2,21 @@
 <?php include 'nav.php'; ?>
 
 <main>
-    <section>
-        <h2>Funcionamiento del sistema</h2>
-        <article>
-            <h3>Cómo opera SEGAS</h3>
-            <p>El sistema cuenta con un sensor MQ-2 que detecta concentraciones de gas en el ambiente. Cuando se
-                detecta una fuga, se activa una alarma sonora y se envía una notificación al usuario.</p>
-        </article>
-        <article>
-            <h3>Componentes principales</h3>
-            <ul>
-                <li>Sensor MQ-2</li>
-                <li>Microcontrolador ESP32</li>
-                <img src="imagenes/arduino.webp" alt="imagen de arduino">
-                <li>Aplicación móvil</li>
-                <li>Sirena de alarma</li>
-            </ul>
-        </article>
+    <section class="hero">
+        <h1>SEGAS – Sistema de Detección y Alerta de Gas</h1>
+        <p>SEGAS es un sistema innovador diseñado para detectar fugas de gas en tiempo real y enviar alertas inmediatas a los residentes y autoridades competentes. Nuestro objetivo es prevenir accidentes domésticos e industriales causados por gases inflamables.</p>
+        <p>Gracias a su integración con tecnologías IoT, SEGAS permite monitorear el estado de los sensores desde cualquier lugar mediante una plataforma web y una aplicación móvil.</p>
     </section>
 
-    <aside>
-        <h4>Información adicional</h4>
-        <p>SEGAS está diseñado para hogares brindando seguridad en caso de fugas de gas</p>
-    </aside>
+    <section>
+        <h2>Objetivo del Proyecto</h2>
+        <p>Desarrollar un sistema inteligente que combine hardware, software y conectividad para ofrecer una solución de seguridad eficiente, económica y accesible. SEGAS busca reducir el riesgo de accidentes y promover entornos más seguros.</p>
+    </section>
+
+    <section>
+        <h2>Visión</h2>
+        <p>Ser una herramienta tecnológica confiable que contribuya a la prevención de fugas de gas, implementando soluciones innovadoras que integren el Internet de las Cosas (IoT) con el bienestar y seguridad de la sociedad.</p>
+    </section>
 </main>
 
 <?php include 'footer.php'; ?>

@@ -1,6 +1,7 @@
 <footer>
-    <p>SEGAS &copy; 2025 </p>
+    <p>© 2025 SEGAS – Sistema de Detección y Alerta de Gas | Proyecto </p>
 </footer>
+
 </body>
 
 </html>

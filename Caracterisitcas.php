@@ -8,6 +8,7 @@
     <ul>
         <li><b>Detección precisa:</b> Usa sensores MQ-2 capaces de identificar gases inflamables con alta sensibilidad.</li>
         <li><b>Conectividad inalámbrica:</b> Transmisión de datos en tiempo real mediante Wi-Fi usando un ESP32.</li>
+        <img src="imagenes/arduino.webp" alt="">
         <li><b>Alertas inmediatas:</b> Envío automático de notificaciones a la app móvil, al panel web y a las autoridades.</li>
         <li><b>Registro de eventos:</b> Historial completo de fugas detectadas, fecha, hora y ubicación del sensor.</li>
         <li><b>Interfaz amigable:</b> Diseño sencillo y accesible para usuarios de cualquier nivel técnico.</li>

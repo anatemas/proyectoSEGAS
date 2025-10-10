@@ -22,7 +22,7 @@ h2,h3{
   margin-top: 10px;
 }
 div{
-     border: 2px solid #0a3d62;
+    border: 2px solid #0a3d62;
   background-color: #ffffff;
   border-radius: 12px;
   padding: 10px;
@@ -60,13 +60,24 @@ list-style: none;
 padding: 0;
 display: flex;
 gap: 15px;
+background-color: #4a85bd;
+box-shadow: #222;
 }
 
 nav a {
 text-decoration: none;
 color: #333;
-}
 
+}
+nav ul li a {
+
+  transition: background-color 0.5s;
+
+
+}
+a:hover {
+  background-color: grey;
+}
 footer {
 background-color: beige;
 text-align: center;

@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'nav.php'; ?>
+<?php include 'include/header.php'; ?>
+<?php include 'include/nav.php'; ?>
 
 <main>
     <h1>Acerca de SEGAS</h1>
@@ -15,4 +15,4 @@
     <p>El proyecto SEGAS fue desarrollado por un grupo multidisciplinario de estudiantes interesados en la aplicación de la tecnología para la seguridad. Cada integrante participó en la parte electrónica, de software, diseño y comunicación del sistema.</p>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'include/footer.php'; ?>

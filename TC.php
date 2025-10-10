@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'nav.php'; ?>
+<?php include 'include/header.php'; ?>
+<?php include 'include/nav.php'; ?>
 
 <main>
     <h1>Términos y Condiciones de Uso</h1>
@@ -18,4 +18,4 @@
     <p>Los datos proporcionados a través de formularios o contacto serán utilizados únicamente para fines de comunicación relacionados con el proyecto.</p>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'include/footer.php'; ?>

@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'nav.php'; ?>
+<?php include 'include/header.php' ?>
+<?php include 'include/nav.php'; ?>
 
 <main>
     <section class="hero">
@@ -19,4 +19,4 @@
     </section>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'include/footer.php'; ?>

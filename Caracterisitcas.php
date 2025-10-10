@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'nav.php'; ?>
+<?php include 'include/header.php'; ?>
+<?php include 'include/nav.php'; ?>
 
 <main>
     <h1>Características del Sistema SEGAS</h1>
@@ -17,4 +17,4 @@
     </ul>
 </main>
 
-<?php include 'footer.php'; ?>
+<?php include 'include/footer.php'; ?>

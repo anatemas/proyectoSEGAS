@@ -1,85 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-font-family: Arial, sans-serif;
-line-height: 1.6;
-margin: 0;
-padding: 0;
-background-color: #f0f3fa;
-color: #222;
-}
-img{
-    width: 20%;
-}
-body{
-    background-color: beige;
-}
-h1{
-    color: #1e3799;
-  text-align: center;
-  margin-top: 10px;
-}
-h2,h3{
-    color: #4a69bd;
-  margin-top: 10px;
-}
-div{
-    border: 2px solid #0a3d62;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 10px;
-  margin: 2.5% 25%;
-  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6fc;   
+  color: #333;
 }
 
-header,
-nav,
-section,
-article,
-aside,
-footer {
- padding: 15px;
-  margin: 10px;
-  border: 1px solid #1e3799;
-  border-radius: 5px;
-  background-color: #fff;
-}
+
 header {
-  background-color: #0a3d62;
-  color: white;
+  background-color: #0a3d62;  
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  border: none;
-  border-radius: 0 0 5px 5px;
-}
-header h1 {
-  color: #ffffff;
+  padding: 20px 0;
 }
 
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav {
+  background-color: #1e3799;  
+  text-align: center;
+}
 
 nav ul {
-list-style: none;
-padding: 0;
-display: flex;
-gap: 15px;
-background-color: #4a85bd;
-box-shadow: #222;
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 nav a {
-text-decoration: none;
-color: #333;
-
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
 }
-nav ul li a {
 
-  transition: background-color 0.5s;
-
-
+nav a:hover {
+  background-color: #4a69bd;
+  border-radius: 4px;
 }
-a:hover {
-  background-color: grey;
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
 }
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #0a3d62;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+section p, section ul, section ol {
+  margin-bottom: 16px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3799;
+  color: #fff;
+}
+
 footer {
-background-color: beige;
-text-align: center;
-font-size: 0.9em;
+  background-color: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
+img {
+  max-width: 20%;
+  height: auto;
+  display: left;
+  margin: 10px auto;
+}
+
+
+  main {
+    padding: 15px;
+    margin: 20px auto;
+  }
+

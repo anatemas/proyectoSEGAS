@@ -1,0 +1,276 @@
+/*ESTILOS GENERALES*/
+
+/*Reinicia márgenes y rellenos predeterminados*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fuente principal y colores base*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6fc; 
+  color: #333; 
+}
+
+/*Título principal*/
+h2 {
+  text-align: center;
+  margin: 30px 0 10px;
+  color: #0a3d62; 
+}
+
+section h1,main h1 {
+  text-align: center;
+  margin: -10px 0 10px;
+  color: #0a3d62; 
+}
+
+/*Contenedor principal para secciones*/
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+
+
+/*CABECERA Y NAVEGACIÓN*/
+
+header {
+  background-color: #0a3d62; 
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+
+/*Barra de navegación*/
+nav {
+  background-color: #1e3799;
+  text-align: center;
+}
+
+/*Lista de enlaces del menú*/
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 10px 0;
+}
+nav {
+   /* Permite desplazarse si no cabe */
+  overflow-x: auto;    
+   /* Evita que los enlaces bajen a otra línea */         
+  white-space: nowrap;          
+}
+
+nav ul {
+  /* Mantiene el menú en una línea */
+  display: inline-flex;   
+  /* Evita que se comprima demasiado */       
+  width: max-content;            
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+
+/*Estilo de los enlaces*/
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+/*Efecto hover en los enlaces del menú*/
+nav a:hover {
+  background-color: #4a69bd; 
+  border-radius: 4px;
+}
+
+/*FORMULARIOS*/
+
+/*Contenedor del formulario*/
+.form-container {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/*Distribuye los elementos del formulario en columna*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Etiquetas*/
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/*Campos de texto, correo, contraseña, etc.*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; 
+}
+
+/*Efecto hover en campos del formulario*/
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover,
+input[type="tel"]:hover,
+select:hover {
+  border-color: #1e3799; 
+}
+
+/*Checkboxes*/
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+/*Botones principales (submit, reset)*/
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px;
+  background-color: #1e3799;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+/*Efecto hover en botones*/
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #4a69bd;
+}
+
+/*Campos tipo archivo (subir foto o credencial)*/
+input[type="file"] {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/*Botón del selector de archivo*/
+input[type="file"]::file-selector-button {
+  background-color: #1e3799;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/*Hover del botón de subir archivo*/
+input[type="file"]::file-selector-button:hover {
+  background-color: #4a69bd;
+}
+
+/*Select (menú desplegable)*/
+select {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+/*Enlaces dentro del formulario*/
+a {
+  color: #1e3799;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*TABLAS */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3799;
+  color: #fff;
+}
+
+/*IMÁGENES*/
+ul img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+ul li img {
+  display: block;
+}
+
+ul li:has(img) {
+  list-style-type: none;
+}
+
+
+/*Pie de página*/
+footer {
+  background-color: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

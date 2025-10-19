@@ -17,7 +17,9 @@
     <h2>Componentes Principales</h2>
     <ul>
         <li>Sensor MQ-2 para detección de gas.</li>
+        <li><img src="imagenes/MQ-2-1-1024x762.avif" alt="sensor MQ-2"></li>
         <li>Microcontrolador ESP32 con Wi-Fi integrado.</li>
+        <li><img src="imagenes/arduino.avif" alt="Módulo Arduino ESP32 utilizado en SEGAS"></li>
         <li>Servidor web y base de datos para registro de eventos.</li>
         <li>Aplicación móvil y sitio web para monitoreo y control.</li>
     </ul>

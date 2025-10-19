@@ -8,7 +8,7 @@
         <label for="correo">Correo electronico: *</label>
         <input type="email" name="correo" id="correo" required>
 
-        <label for="correo">Numero telefonico : *</label>
+        <label for="numero">Numero telefonico : *</label>
         <input type="tel" name="numero" id="numero" required pattern="[0-9]{10}" title="Debe contener 10 dígitos">
 
         <label for="password">Contraseña:*</label>
@@ -36,10 +36,12 @@
 
         <label for="country">Pais:*</label>
         <select id="country" name="country" required>
+            <option value="" disabled selected>Seleccione un país</option>
             <option value="mexico">México</option>
-            <option value="canada">Canada</option>
+            <option value="canada">Canadá</option>
             <option value="usa">USA</option>
         </select>
+
 
         <label for="estado">Estado:*</label>
         <input type="text" name="estado" id="estado" required>
@@ -62,7 +64,7 @@
         <label for="referencia">Referencia (opcional):</label>
         <input type="text" name="referencia" id="referencia">
 
-        <label for="credencial ">credencial (opcional) :</label>
+        <label for="credencial">credencial (opcional) :</label>
         <input type="file" name="credencial" id="credencial" accept=".pdf,.jpg,.png">
 
         <label for="foto">Foto de perfil (opcional):</label>

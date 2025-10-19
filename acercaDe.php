@@ -2,7 +2,7 @@
 <?php include 'include/nav.php'; ?>
 
 <main>
-    <h1>Acerca de SEGAS</h1>
+    <h2 class="titulo-principal">Acerca de SEGAS</h2>
     <p>SEGAS (Sistema de Detección y Alerta de Gas) es un proyecto académico y tecnológico que busca mejorar la seguridad en los hogares, industrias y espacios públicos. Su finalidad es detectar fugas de gas y generar alertas de manera automática y eficiente.</p>
 
     <h2>Misión</h2>

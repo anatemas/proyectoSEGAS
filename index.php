@@ -6,7 +6,7 @@
 
 <div class="form-container">
     <form action="inicio.php" method="post">
-        <label for="user">Correo electronico:</label>
+        <label for="user">Correo electronico/Telefono:</label>
         <input type="text" name="user" id="user" required>
 
         <label for="password">Contraseña:</label>
@@ -16,7 +16,7 @@
             <input type="checkbox" name="TC" id="TC" required>
             <a href="TC.php" target="blank">Términos y condiciones</a>
         </label>
-        <a href="/proyectoSEGAS/formulario.php">Crear cuenta</a>
+        <a href="/proyectoSEGAS/registro.php">Crear cuenta</a>
         <input type="submit" value="Entrar">
     </form>
 </div>

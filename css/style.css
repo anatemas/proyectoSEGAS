@@ -22,7 +22,7 @@ h2 {
   color: #0a3d62; 
 }
 
-section h1,main h1 {
+section h1,main h1,.titulo-principal {
   text-align: center;
   margin: -10px 0 10px;
   color: #0a3d62; 

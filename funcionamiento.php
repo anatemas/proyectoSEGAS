@@ -2,7 +2,7 @@
 <?php include 'include/nav.php'; ?>
 
 <main>
-    <h1>Funcionamiento del Sistema SEGAS</h1>
+    <h2 class="titulo-principal">Funcionamiento del Sistema SEGAS</h2>
     <p>El funcionamiento de SEGAS se basa en un proceso automatizado de detección y notificación ante fugas de gas. El sistema integra sensores de tipo MQ-2 conectados a un microcontrolador ESP32, que analiza en tiempo real la concentración de gases inflamables en el ambiente.</p>
 
     <h2>Etapas del Proceso</h2>

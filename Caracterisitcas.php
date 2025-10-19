@@ -2,7 +2,7 @@
 <?php include 'include/nav.php'; ?>
 
 <main>
-    <h1>Características del Sistema SEGAS</h1>
+    <h2 class="titulo-principal">Características del Sistema SEGAS</h2>
     <p>SEGAS está diseñado para ofrecer una solución integral de detección de gas, combinando precisión, conectividad y facilidad de uso. A continuación, se presentan las principales características del sistema:</p>
 
     <ul>

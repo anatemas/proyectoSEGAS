@@ -3,7 +3,7 @@
 
 <main>
     <section class="hero">
-        <h1>SEGAS – Sistema de Detección y Alerta de Gas</h1>
+        <h2 class="titulo-principal">SEGAS – Sistema de Detección y Alerta de Gas</h2>
         <p>SEGAS es un sistema innovador diseñado para detectar fugas de gas en tiempo real y enviar alertas inmediatas a los residentes y autoridades competentes. Nuestro objetivo es prevenir accidentes domésticos e industriales causados por gases inflamables.</p>
         <p>Gracias a su integración con tecnologías IoT, SEGAS permite monitorear el estado de los sensores desde cualquier lugar mediante una plataforma web y una aplicación móvil.</p>
     </section>

@@ -83,6 +83,7 @@
 
     </form>
 </div>
+<script src="js/validaciones.js"></script>
 
 
 <?php include 'include/footer.php'; ?>

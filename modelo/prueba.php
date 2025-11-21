@@ -2,14 +2,24 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-
-echo "entraste al modelo";
+$database   = "miweb";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=miweb", $username, $password);
-  // set the PDO error mode to exception
+  $sql = "INSERT INTO usuario (
+    nombre,
+    apellidoPaterno,
+    apellidoMaterno,
+    correoElectronico,
+    telefono) 
+VALUES
+('Cristian', 'Hernandez', 'Flores', 'ccris.@123.com', '5552223344') ";
+
+  $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
+  $conn->exec($sql);
+  echo "New record created successfully";
 } catch (PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+  echo $sql . "<br>" . $e->getMessage();
 }
+
+$conn = null;

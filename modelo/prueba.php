@@ -1,22 +1,26 @@
-<?php   
+<?php
+$servername = "localhost";
+$username = "usuario";
+$password = "Toor123$";
+$database   = "proyecto";
 
-// hacer base de datos 
-$servername = "localhost"; // 127.0.0.1 172.100.28.1  200.100.15.14
-$username = "mox";
-$password = "";
-
-echo "entraste al modelo" ;
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=prueba", $username, $password);
-  // set the PDO error mode to exception
+  $sql = "INSERT INTO usuario (
+    
+    nombre,
+    apellidoPaterno,
+    apellidoMaterno,
+    correoElectronico,
+    telefono) 
+VALUES
+('Cristian', 'Hernandez', 'Flores', 'ccris.@123.com', '5552223344') ";
+
+  $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+  $conn->exec($sql);
+  echo "New record created successfully";
+} catch (PDOException $e) {
+  echo $sql . "<br>" . $e->getMessage();
 }
 
-
-
-
-
-?>
+$conn = null;

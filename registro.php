@@ -3,7 +3,7 @@
 <h2>Crear Cuenta</h2>
 
 <div class="form-container">
-    <form action="index.php">
+    <form action="/modelo/prueba.php">
 
         <label for="correo">Correo electronico: *</label>
         <input type="email" name="correo" id="correo" required>

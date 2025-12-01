@@ -3,7 +3,7 @@
 <h2>Crear Cuenta</h2>
 
 <div class="form-container">
-    <form action="/modelo/prueba.php">
+    <form action="controlador/RegUser.php" method="POST">
 
         <label for="correo">Correo electronico: *</label>
         <input type="email" name="correo" id="correo" required>
@@ -26,6 +26,8 @@
 
         <label for="aMaterno">Apellido materno:*</label>
         <input type="text" name="aMaterno" id="aMaterno" required>
+
+        <!--
 
         <label>Sexo:*</label>
         <label><input type="radio" name="sexo" value="hombre" required> Hombre</label>
@@ -70,6 +72,7 @@
         <label for="foto">Foto de perfil (opcional):</label>
         <input type="file" name="foto" id="foto" accept="image/*">
 
+-->
         <label><input type="checkbox" name="notificaciones"> Deseo recibir notificaciones por correo</label>
 
         <label>

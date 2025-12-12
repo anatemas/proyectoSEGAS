@@ -274,3 +274,76 @@ footer {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
+
+/* TABLAS MEJORADAS - ESTILO UNIFICADO */
+.tabla-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Encabezados */
+.tabla-usuarios th {
+  background-color: #1e3799;
+  color: #fff;
+  padding: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/* Filas */
+.tabla-usuarios td {
+  padding: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Hover */
+.tabla-usuarios tr:hover {
+  background-color: #f1f4ff;
+}
+
+/* Botones de acción */
+.btn-accion {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 2px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Botón Editar */
+.btn-editar {
+  background-color: #4a69bd;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #1e3799;
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+  background-color: #c0392b;
+  color: white;
+}
+
+.btn-eliminar:hover {
+  background-color: #96281b;
+}

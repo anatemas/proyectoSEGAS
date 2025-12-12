@@ -85,6 +85,7 @@
         <input type="submit" onclick="alert('datos guardados correctamente')" value="Guardar datos">
 
     </form>
+
 </div>
 <script src="js/validaciones.js"></script>
 

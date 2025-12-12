@@ -84,4 +84,24 @@ class Usuario
         $stmt = $conn->prepare($sql);
         return $stmt->execute([$id]);
     }
+
+
+    public static function login($correo, $password)
+    {
+        $conn = Conexion::conectar();
+
+        $stmt = $conn->prepare("SELECT * FROM usuario WHERE correoElectronico = ?");
+        $stmt->execute([$correo]);
+        $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$usuario) {
+            return "correo";
+        }
+
+        if (!password_verify($password, $usuario['password'])) {
+            return "password";
+        }
+
+        return $usuario;
+    }
 }

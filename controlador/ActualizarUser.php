@@ -1,15 +1,14 @@
 <?php
 require_once "../modelo/Usuario.php";
 
+$id       = $_POST['id'];
+$nombre   = $_POST['nombre'];
+$aPaterno = $_POST['aPaterno'];
+$aMaterno = $_POST['aMaterno'];
+$correo   = $_POST['correo'];
+$telefono = $_POST['telefono'];
 
-Usuario::actualizar(
-    $_POST['id'],
-    $_POST['nombre'],
-    $_POST['aPaterno'],
-    $_POST['aMaterno'],
-    $_POST['correo'],
-    $_POST['telefono']
-);
+Usuario::actualizar($id, $nombre, $aPaterno, $aMaterno, $correo, $telefono);
 
-header("Location: ListarUsuarios.php");
+header("Location: ListarUser.php");
 exit();

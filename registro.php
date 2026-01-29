@@ -1,3 +1,4 @@
+<?php include 'include/session.php'; ?>
 <?php include 'include/header.php'; ?>
 
 <h2>Crear Cuenta</h2>

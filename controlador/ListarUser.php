@@ -1,5 +1,8 @@
 <?php
+include '../include/session.php';
 include '../include/header.php';
+include '../include/nav.php';
+
 require_once "../modelo/Usuario.php";
 
 $usuarios = Usuario::listar();
@@ -31,3 +34,4 @@ $usuarios = Usuario::listar();
         <?php endforeach; ?>
     </table>
 </div>
+<?php include '../include/footer.php';?>

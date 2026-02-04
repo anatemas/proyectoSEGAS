@@ -1,14 +1,24 @@
 <?php
+include '../include/session_admin.php';
 require_once "../modelo/Usuario.php";
 
-$id       = $_POST['id'];
-$nombre   = $_POST['nombre'];
-$aPaterno = $_POST['aPaterno'];
-$aMaterno = $_POST['aMaterno'];
-$correo   = $_POST['correo'];
-$telefono = $_POST['telefono'];
+if (
+    !isset($_POST['id'], $_POST['nombre'], $_POST['aPaterno'], $_POST['aMaterno'],
+            $_POST['correo'], $_POST['telefono'], $_POST['rol'])
+) {
+    header("Location: listaUser.php");
+    exit();
+}
 
-Usuario::actualizar($id, $nombre, $aPaterno, $aMaterno, $correo, $telefono);
+Usuario::actualizar(
+    $_POST['id'],
+    $_POST['nombre'],
+    $_POST['aPaterno'],
+    $_POST['aMaterno'],
+    $_POST['correo'],
+    $_POST['telefono'],
+    $_POST['rol']
+);
 
-header("Location: ListarUser.php");
+header("Location: listaUser.php");
 exit();

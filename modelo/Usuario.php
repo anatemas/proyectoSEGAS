@@ -27,8 +27,8 @@ class Usuario
         $conn = Conexion::conectar();
 
         $sql = "INSERT INTO usuario 
-        (nombre, aPaterno, aMaterno, correoElectronico, telefono, password)
-        VALUES (?, ?, ?, ?, ?, ?)";
+        (nombre, aPaterno, aMaterno, correoElectronico, telefono, password,rol)
+        VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $conn->prepare($sql);
         $stmt->execute([
@@ -37,7 +37,8 @@ class Usuario
             $this->aMaterno,
             $this->correo,
             $this->telefono,
-            $this->password
+            $this->password,
+            'usuario'
         ]);
     }
 
@@ -70,11 +71,12 @@ class Usuario
                     aPaterno = ?, 
                     aMaterno = ?, 
                     correoElectronico = ?, 
-                    telefono = ?
+                    telefono = ?,
+                    rol=?
                 WHERE idUsuario = ?";
 
         $stmt = $conn->prepare($sql);
-        return $stmt->execute([$nombre, $aPaterno, $aMaterno, $correo, $telefono, $id]);
+        return $stmt->execute([$nombre, $aPaterno, $aMaterno, $correo, $telefono,$rol, $id]);
     }
 
     public static function eliminar($id)

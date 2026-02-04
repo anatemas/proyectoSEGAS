@@ -26,6 +26,7 @@ if ($usuario === "password") {
 if (is_array($usuario)) {
     $_SESSION['id'] = $usuario['idUsuario'];
     $_SESSION['nombre'] = $usuario['nombre'];
+    $_SESSION['rol'] = $usuario['rol'];
 
     header("Location: ../inicio.php");
     exit();

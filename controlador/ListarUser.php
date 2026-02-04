@@ -1,5 +1,5 @@
 <?php
-include '../include/session.php';
+include '../include/session_admin.php';
 include '../include/header.php';
 include '../include/nav.php';
 

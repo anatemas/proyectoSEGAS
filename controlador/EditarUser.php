@@ -1,4 +1,6 @@
 <?php
+
+include '..include/session_admin.php';
 include '../include/header.php';
 require_once "../modelo/Usuario.php";
 
@@ -26,6 +28,12 @@ $u = Usuario::obtener($_GET['id']);
 
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" value="<?= $u['telefono'] ?>" required>
+
+        <label>Rol:</label>
+        <select name="rol" required>
+            <option value="usuario" <?= $u['rol'] === 'usuario' ? 'selected' : '' ?>>Usuario</option>
+            <option value="admin" <?= $u['rol'] === 'admin' ? 'selected' : '' ?>>Administrador</option>
+        </select>
 
         <input type="submit" value="Actualizar">
     </form>

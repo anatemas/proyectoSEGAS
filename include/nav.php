@@ -4,7 +4,9 @@
         <li><a href="/proyectoSEGAS/funcionamiento.php">Funcionamiento</a></li>
         <li><a href="/proyectoSEGAS/Caracterisitcas.php">Características</a></li>
         <li><a href="/proyectoSEGAS/acercaDe.php">Acerca de</a></li>
-        <li><a href="/proyectoSEGAS/controlador/ListarUser.php">usuarios</a></li>
+        <?php if ($_SESSION['rol'] === 'admin'): ?>
+    <li><a href="/proyectoSEGAS/usuarios.php">Usuarios</a></li>
+<?php endif; ?>
 
     </ul>
 </nav>

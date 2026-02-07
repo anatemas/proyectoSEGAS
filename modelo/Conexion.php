@@ -4,8 +4,8 @@ class Conexion
     public static function conectar()
     {
         $servername = "localhost";
-        $username   = "root";
-        $password   = "";
+        $username   = "anatema";
+        $password   = "15anatemas";
         $database   = "miweb";
 
         try {
